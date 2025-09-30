@@ -21,12 +21,12 @@ const Countires = ({ coutriesPromise }) => {
   // console.log(countries);
   return (
     <div>
-      <h1>In the Countries:{countries.length} </h1>
+      <h1>You, me & baby:{countries.length} </h1>
       <h3>Total Countries Visited: {visitedCountries.length} </h3>
       <ol>
         {visitedCountries.map((country) => (
-          <li>
-            key={country.cca3.cca3}
+          <li key={country.cca3.cca3}>
+            
             {country.name.common}
           </li>
         ))}
